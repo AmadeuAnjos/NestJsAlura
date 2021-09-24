@@ -13,12 +13,11 @@ export class Livro extends Model<Livro>{
         type: DataType.STRING,
         allowNull: false,
     })
+    nome: string;
 
     @Column({
         type: DataType.DECIMAL(10, 2),
         allowNull: false,
-    })
-    nome: string;
+    })    
     preco: number;
-
 }
